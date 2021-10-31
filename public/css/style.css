@@ -23,7 +23,21 @@ header{
 .arrow{
     font-size: 2rem;
 }
-
+.icons{
+    font-size: x-large;
+}
+.cart-reminder-title {
+    font-family: "FuturaStdMedium", sans-serif;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.cart-reminder-subtitle {
+    font-family: "FuturaStdBook", sans-serif;
+    line-height: 16px;
+}
+.cart-reminders-img-container {
+    padding-right: 20px;
+}
 
 hr{
     color: gray;
@@ -86,15 +100,47 @@ hr{
     font-family: serif;
 }
 
+.counter{
+    position: relative;
+    left: 233px;
+    top: 20%;
+    font-size: medium;
+}
+.lupa{
+    position: relative;
+    left: 0%;
+    top: 20%;
+}
+.bolsa{
+    position: relative;
+    left: 250px;
+    top: 20%;
+}
+.pow{
+    position: relative;
+    left: -20%;
+}
+.precio{
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+.cantidad{
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+
 @media (min-width: 769px){
     .foto1{
         margin-left: 30%;
-        width: 50%;
+        width: 100%;
         height: 90%;
     }
     .foto2{
         margin-left: 30%;
-        width: 50%;
+        width: 100%;
         height: 90%;
     }
     .carrito{
@@ -131,12 +177,79 @@ hr{
     
     .num{
         width: 5%;
+        font-size: small;
         border-radius: 0%;
         border-color: grey;
     }
     .name{
-        font-size: 180%;    }
+        font-size: 110%;
+        font-weight: 200;
+        margin-left: 2%;
+    }
     .texto{
         margin-left: 38%;
+    }
+    .counter{
+        position: relative;
+        top: -7%;
+        left: -15%;
+        font-size: medium;
+    }
+    .lupa{
+        position: relative;
+        left: 0%;
+        top: 0%;
+    }
+    .bolsa{
+        position: relative;
+        left: 0%;
+        top: 0%;
+        font-size: x-large;
+    }
+    .pow{
+        position: relative;
+        left: 0%;
+    }
+    .text{
+        position: relative;
+        left: 20%;
+    }
+    .precio{
+        position: relative;
+        top: -100px;
+        left: 410px;
+    }
+    .cantidad{
+        position: relative;
+        top: -140px;
+        left: 230px;
+    }
+    .tacho{
+        position: relative;
+        left: 390px;
+    }
+    .talle{
+        position: relative;
+        top: -60px;
+        left: 150px;
+    }
+    .talle2{
+        position: relative;
+        top: -60px;
+        left: 150px;
+    }
+    .tacho2{
+        position: relative;
+        left: 268px;
+    }
+    .cantidad2{
+        position: relative;
+        top: -140px;
+        left: 230px;
+    }
+    .precio2{
+        position: relative;
+        top: -100px;
+        left: 450px;
     }
 }

@@ -19,19 +19,19 @@
     </div>
     <div class="container-fluid bg-light">
         <div class="row">
-            <i class="bi bi-list col-1 mt-3 me-1 d-sm-block d-lg-none" style="font-size: x-large;"></i> <!--ICONO DE LAS BARRAS MOBILE-->
-            <i class="bi bi-search col-1 mt-3 ms-1 d-sm-block d-lg-none" style="font-size: x-large;"></i> <!--ICONO DE LA LUPA MOBILE-->
-            <p class="text-dark fw-bold fs-1 text-center col-6 col-lg-12 pow mt-2 ms-3 ms-lg-4">Pow.</p>
-            <i class="bi bi-bag col-2 mt-2 ms-4 d-lg-none" style="font-size: x-large;"></i> <!--ICONO DEL CARRITO MOBILE-->
-            <div class="d-none align-content-center d-lg-flex texto">
-                <p class="text-dark text-lg-center fw-bold col-1">Sale</p>
-                <p class="text-dark text-decoration-underline text-lg-center fw-bold col-1">Colección</p>
-                <p class="text-dark text-lg-center fw-bold col-1 text-nowrap">Gift Cards</p>
-                <div class="row justify-content-end col-3">
-                    <i class="bi bi-search col-2 mt-2 ms-1 d-none d-lg-block" style="font-size: x-large;"></i> <!--ICONO DE LA LUPA DESKTOP-->
-                    <i class="bi bi-person col-2 mt-2 ms-1 d-none d-lg-block" style="font-size: x-large;"></i> <!--ICONO DEL USER DESKTOP-->
-                    <i class="bi bi-bag col-2 mt-2 ms-1 d-sm-none d-lg-block" style="font-size: x-large;"></i> <!--ICONO DEL CARRITO DESKTOP-->
-                </div>  
+            <i class="bi bi-list col-1 mt-3 me-1 d-sm-block d-lg-none icons"></i> <!--ICONO DE LAS BARRAS MOBILE-->
+            <div class="col-3 d-block order-lg-3">
+                <i class="bi bi-search col-2 order-sm-2 order-lg-3 mt-3 ms-1 d-sm-block icons d-lg-inline-flex lupa"></i> <!--ICONO DE LA LUPA-->
+                <i class="bi bi-person col-2 order-lg-4 mt-3 d-none d-lg-block icons d-lg-inline-flex"></i> <!--ICONO DEL USER-->
+                <i class="bi bi-bag col-2 order-sm-4 order-lg-5 mt-3 ms-1 icons d-lg-inline-flex bolsa"></i><span class="counter" id="counter" type="number">2</span> <!--ICONO DEL CARRITO-->
+            </div>
+            <p class="text-dark fw-bold fs-1 text-center col-6 order-lg-1 order-sm-2 col-lg-12 pow mt-2 ms-5 ms-lg-4 pow">Pow.</p>
+            <div class="container d-none d-lg-block col-9 order-lg-2">
+                <div class="row d-lg-block d-none text-lg-center mt-3 text">
+                    <p class="col-3 d-lg-inline fw-bold">Sale</p>
+                    <p class="col-3 d-lg-inline fw-bold text-decoration-underline">Colección</p>
+                    <p class="col-3 d-lg-inline fw-bold">Gift Cards</p>
+                </div>
             </div> 
         </div>
     </div>
@@ -39,123 +39,143 @@
     <!--TEXTO CARRITO-->
     <div class="bg-white">
         <p class="text-dark text-center carrito fs-3 fw-bold mt-3 text-lg-start">Carrito</p>
-        <hr class="mx-auto d-block d-lg-none"> <!--SEPARADOR 1-->
+        <hr class="mx-auto d-block d-lg-none"> <!--SEPARADOR 1 MOBILE-->
     </div>
     <!--CUADRO ENVIOS, CAMBIOS Y MEDIOS PAGO DESKTOP-->
     <div class="container">
-        <div class="col-lg-8">
-            <div class="row bg-light d-none d-lg-flex">
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <i class="bi bi-box-seam box"></i>
-                        </div>
-                        <div class="col-9">
-                            <p class="mx-auto fw-bold fs-6 mt-2 col-2 ms-2 d-inline-flex">ENVÍOS</p>
-                            <p class="col-lg-">Envíos a todo el país</p>
-                        </div>
-                    </div>       
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <i class="bi bi-arrow-left-right arrow col-3"></i>
-                        </div>
-                        <div class="col-9">
-                            <p class="mx-auto fw-bold fs-6 ms-2 mt-2 col-2 d-inline-flex text-nowrap">CAMBIOS Y DEVOLUCIONES</p>
-                            <p class="mt-4 ms-0 text-nowrap">Es gratis y muy sencillo</p>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row bg-light d-none d-lg-flex">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="bi bi-box-seam box"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="mx-auto fw-bold fs-6 mt-4 col-2 ms-0 mb-0">ENVÍOS</p>
+                                <p class="col ms-0 mt-0">Envíos a todo el país</p>
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="bi bi-arrow-left-right arrow col-3 mt-0"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="mx-auto fw-bold fs-6 ms-0 mt-4 col-2 text-nowrap mb-0">CAMBIOS Y DEVOLUCIONES</p>
+                                <p class="mt-0 ms-0 text-nowrap col">Es gratis y muy sencillo</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <i class="bi bi-credit-card card col-3"></i>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="bi bi-credit-card card col-3 ms-2 mt-2"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="mx-auto fw-bold fs-6 mt-4 ms-2 col-2 mb-0 text-nowrap me-2">MEDIOS DE PAGO</p>
+                                <p class="ms-2 mt-0">100% seguros</p>
+                            </div>
                         </div>
-                        <div class="col-9">
-                            <p class="mx-auto fw-bold fs-6 mt-2 ms-2 col-2 d-inline-flex text-nowrap me-2">MEDIOS DE PAGO</p>
-                            <p class="ms-4">100% seguros</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <!--ART. CANT. TALLE, ETC.-->
-            <div class="row order-lg-2 d-none d-lg-block">
-                
-                <hr class="mx-auto"> <!--SEPARADOR 1-->
-            </div>
-            <!--PRODUCTOS-->
-            <div class="row order-1 order-lg-3 mt-2">
-                <div class="bg-white col-4">
-                    <img class="foto1" src="/img/vverde.PNG" alt="Foto 1">
-                </div>
-                <div class="col-4">
-                    <p class="text-nowrap name">Saco Cove Long</p>
-                    <p class="fw-lighter ms-2 mb-1 coltal">Color: Rojo</p> <!--CLASE COLTAL SE REFIERE A COLOR TALLE, PARA CAMBIAR EL TAMANO DE LA LETRA CON CSS-->
-                    <p class="fw-lighter ms-2 mt-1 coltal">Talle: 44</p>
-                    <div class="row">
-                        <p class="col-5 ms-2 text-decoration-line-through">$9.895</p>
-                        <p class="col-5 ms-2 text-danger fw-bold price">$7.421</p>
-                    </div>
-                    <div class="row mb-4">
-                        <button class="col-3 ms-3 minus text-dark">-</button>
-                        <input type="number" value="1" min="1" max="10" class="col-4 ms-sm-0 num text-center cant" id="cant1">
-                        <button class="col-3 ms-0 plus text-dark">+</button>
                     </div>  
                 </div>
-                <div class="col-3">
-                    <i class="bi bi-trash trash"></i> <!--ICONO DEL TACHITO-->
-                </div>    
-                <div>         
-                    <hr class="mx-auto"> <!--SEPARADOR 2-->
-                </div>    
-            </div>
-            <div class="row order-2 order-lg-4">
-                <div class="bg-white col-4">
-                    <img class="foto2" src="/img/vestampa.PNG" alt="Foto 2">
-                </div>
-                <div class="col-4">
-                    <p class="text-nowrap name">Jean Hadid</p>
-                    <p class="fw-lighter ms-2 mb-1 coltal text-nowrap">Color: Azul Oscuro</p> <!--CLASE COLTAL SE REFIERE A COLOR TALLE, PARA CAMBIAR EL TAMANO DE LA LETRA CON CSS-->
-                    <p class="fw-lighter ms-2 mt-1 coltal">Talle: 44</p>
+                <!--ART. CANT. TALLE, ETC.-->
+                <div class="container">
                     <div class="row">
-                        <p class="col-5 ms-2 text-dark price">$7.421</p>
+                        <div class="d-none d-lg-inline-flex col-8 mt-4">
+                            <div class="col-6">
+                                <p>ART.</p>
+                            </div>
+                            <div class="col-3">
+                                <p>Talle</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Cant</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Precio</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Borrar</p>
+                            </div>
+                        </div>
+                        <hr class="mx-auto d-none d-lg-block"> <!--SEPARADOR 1 DESKTOP-->
+                    </div>
+                </div>   
+                <!--PRODUCTOS-->
+                <div class="row">
+                    <div class="bg-white col-4 col-lg-2">
+                        <img class="foto1 ms-lg-0 me-lg-0" src="/img/vverde.PNG" alt="Foto 1">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <p class="text-nowrap name ms-lg-0">Saco Cove Long</p>
+                        <p class="fw-lighter ms-2 mb-1 coltal text-nowrap">Color: Rojo</p> <!--CLASE COLTAL SE REFIERE A COLOR TALLE, PARA CAMBIAR EL TAMANO DE LA LETRA CON CSS-->
+                        <p class="fw-lighter ms-2 mt-1 coltal d-lg-none">Talle: 44</p>
+                        <p class="talle d-none d-lg-block">44</p>
+                        <div class="row d-lg-inline-flex">
+                            <p class="col-5 ms-2 text-decoration-line-through precio">$9.895</p>
+                            <p class="col-5 col-lg-2 ms-2 text-danger price precio">$7.421</p>
+                        </div>
+                        <div class="row mb-4 cantidad">
+                            <button class="col-3 ms-3 minus text-dark">-</button>
+                            <input type="number" value="1" min="1" max="10" class="col-4 ms-sm-0 num text-start cant">
+                            <button class="col-3 ms-0 plus text-dark">+</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-3">
+                        <i class="bi bi-trash trash tacho"></i> <!--ICONO DEL TACHITO-->
+                    </div>
+                    <div class="d-lg-none">
+                        <hr class="mx-auto d-block d-lg-none"> <!--SEPARADOR 1 MOBILE-->
+                    </div>
+                </div>
+                <div class="row">
+                    <hr class="mx-auto d-none d-lg-block"> <!--SEPARADOR 2 DESKTOP-->
+                    <div class="bg-white col-4 col-lg-2">
+                        <img class="foto2 ms-lg-0 me-lg-0" src="/img/vestampa.PNG" alt="Foto 2">
+                    </div>
+                    <div class="col-4 col-lg-2">
+                        <p class="text-nowrap name">Jean Hadid</p>
+                        <p class="fw-lighter ms-2 mb-1 coltal text-nowrap">Color: Azul Oscuro</p> <!--CLASE COLTAL SE REFIERE A COLOR TALLE, PARA CAMBIAR EL TAMANO DE LA LETRA CON CSS-->
+                        <p class="fw-lighter ms-2 mt-1 coltal d-lg-none">Talle: 44</p>
+                        <p class="d-none d-lg-block talle2">44</p>
+                        <p class="col-5 col-lg-2 order-lg-4 ms-2 text-dark price precio2">$7.421</p>
+                        <div class="row mb-4 cantidad2">
+                            <button class="col-3 ms-3 minus text-dark">-</button>
+                            <input type="number" value="1" min="1" max="10" class="col-4 ms-sm-0 num text-center cant">
+                            <button class="col-3 ms-0 plus text-dark">+</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-3">
+                        <i class="bi bi-trash trash tacho2"></i> <!--ICONO DEL TACHITO-->
+                    </div> 
+                </div>
+            </div>
+            <!--RESUMEN DE COMPRA-->
+            <div class="col-lg-4 mt-lg-5">
+                <div class="bg-light">
+                    <p class="fw-bold mt-4 ms-4">Resumen</p>
+                    <div class="row">
+                        <p class="mt-3 ms-4 col-6">Subtotal</p>
+                        <span class="bg-transparent border-0 col-5 text-dark fs-5" type="number" id="subtotal">14842</span>
                     </div>
                     <div class="row">
-                        <button class="col-3 ms-3 minus text-dark agregar">-</button>
-                        <input type="number" value="1" min="1" max="10" class="col-4 ms-sm-0 num text-center cant" id="cant2">
-                        <button class="col-3 ms-0 plus text-dark sacar">+</button>
-                    </div>   
+                        <p class="mt-3 ms-4 col-6">Envío</p>
+                        <p class="mt-3 col-4">Gratis</p>
+                    </div>
+                    <div class="row">
+                        <p class="mt-3 ms-4 col-6 fw-bold">Total</p>
+                        <span class="bg-transparent border-0 col-5 text-dark fw-bold fs-5" type="number" id="total">14842</span>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <i class="bi bi-trash trash"> </i><!--ICONO DEL TACHITO-->       
-                </div>
+                <div class="bg-white container">
+                    <p class="text-success text-center mt-4">¡Tu envío es gratis!</p>
+                    <button class="bg-dark text-center h-25 text-white completar ms-4">Completar Compra</button>
+                    <button class="bg-white text-center text-dark seguir ms-4">Seguir Comprando</button>
+                </div>  
             </div>
-        </div>
-        <div class="col-lg-4">
-            <!--RESUMEN DE COMPRA-->
-            <div class="bg-light w-100">
-                <p class="fw-bold mt-4 ms-4">Resumen</p>
-                <div class="row">
-                    <p class="mt-3 ms-4 col-6">Subtotal</p>
-                    <input class="bg-transparent border-0 col-5 text-dark fs-5" type="number" id="subtotal" value="14842">
-                </div>
-                <div class="row">
-                    <p class="mt-3 ms-4 col-6">Envio</p>
-                    <p class="mt-3 col-4">Gratis</p>
-                </div>
-                 <div class="row">
-                    <p class="mt-3 ms-4 col-6 fw-bold">Total</p>
-                    <input class="bg-transparent border-0 col-5 text-dark fw-bold fs-5" type="number" id="total" value="14842">
-                </div>
-            </div>
-            <div class="bg-white container">
-                <p class="text-success text-center mt-4">¡Tu envío es gratis!</p>
-                <button class="bg-dark text-center text-white completar mx-auto">Completar Compra</button>
-                <button class="bg-white text-center text-dark seguir mx-auto">Seguir Comprando</button>
-            </div>  
-        </div>
+        </div>   
     </div>
     <!--CUADRO ENVIOS, CAMBIOS, PAGO MOBILE-->
     <div class="container bg-light w-75 mt-4 icons d-block d-lg-none">
