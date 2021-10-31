@@ -6,14 +6,14 @@ window.onload = function() {
     
     for(let i=0; i < prices.length; i++)
     {
-        minus[i].onclick = () => {
+        minus[i].onclick = () => { // AL HACER CLICK EN EL - RESTA EL VALOR DEL INPUT
             if(inputs[i].value > 0) {
                 inputs[i].value--;
                 recalculate(prices);
             } 
         }
         
-        plus[i].onclick = () => {
+        plus[i].onclick = () => { // AL HACER CLICK EN EL + SUMA EL VALOR DEL INPUT
             if(inputs[i].value < 9) {
                 inputs[i].value++; 
                 recalculate(prices);
@@ -22,10 +22,10 @@ window.onload = function() {
         inputs[i].onchange = () => {
             recalculate(prices);
         }
-
-    }
-    
+    }   
 }
+
+// FUNCION QUE RECALCULA LOS VALORES DE LOS INPUTS Y SUMA LOS TOTALES
 
 function recalculate(prices) {
     let acum = 0;
