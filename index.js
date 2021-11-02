@@ -8,15 +8,6 @@ app.use(express.static('public'));
 app.get('/', function(req,res){
     res.sendFile(path.resolve(__dirname, './index.html'))
 });
-app.get('/contacto.html', function(req,res){
-    res.sendFile(path.resolve(__dirname, './es/contacto.html'))
-});
-app.get('/aboutUs.html', function(req,res){
-    res.sendFile(path.resolve(__dirname, './es/aboutUs.html'))
-});
-app.get('/confirmMail.html', function(req,res){
-    res.sendFile(path.resolve(__dirname, './es/confirmMail.html'))
-});
 
 
 app.listen(3030, () => {
