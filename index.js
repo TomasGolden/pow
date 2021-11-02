@@ -9,8 +9,7 @@ app.get('/', function(req,res){
     res.sendFile(path.resolve(__dirname, './index.html'))
 });
 
+app.set('puerto', process.env.PORT || 3001);
 
-app.listen(3030, () => {
-    console.log('Servidor corriendo en el puerto 3030');
-})
+app.listen(app.get('puerto'), () => console.log(`Server on port: ${app.get('puerto')}`))
 
